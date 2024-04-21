@@ -1,6 +1,10 @@
 body {
     font-family: 'Verdana', sans-serif;
-    margin: 50px 25px;
+    background: #f1fbfe;
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto; 
+    margin:0;
 }
 
 a {
@@ -12,13 +16,27 @@ a:hover {
 }
 
 header, footer, div.page {
-    width: 760px;
+    width: 90%;
     margin: 0 auto;
     background: #daeef3;
     padding: 20px 30px;
 }
 
-header h1 {
+header, footer{
+    border-radius: 25px;
+}
+
+header{
+    margin-top: 10px;
+    height: fit-content;
+}
+
+footer{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+header nav h1 {
     color: #169bbd;
     margin: 0;
     font-weight: normal;
@@ -39,4 +57,13 @@ header nav ul li {
 
 div.page {
     background: #f1fbfe;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
